@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Ticket - Online Ticket System</title>
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #3399ff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #004080;
+        }
+        .form-container {
+            background-color: white;
+            width: 50%;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #99c2ff;
+            border-radius: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #00264d;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ticket Booking Portal</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="book.html">Book Ticket</a>
+        <a href="status.html">Check Status</a>
+    </nav>
+
+    <div class="form-container">
+        <h2>Book Your Ticket</h2>
+        
+        <!-- Form routes to status.html on submission -->
+        <form action="status.html" method="GET" onsubmit="alert('Ticket Booked Successfully!');">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="event">Select Tourist Place, Temple, or Concert:</label>
+            <select id="event" name="event">
+                <option>Mountain Sightseeing Pass</option>
+                <option>Historical Fort Entry</option>
+                <option>Wildlife Sanctuary Safari</option>
+                <option>City Temple VIP Darshan</option>
+                <option>Heritage Shrine Tour</option>
+                <option>Rock Band Live Concert</option>
+                <option>Classical Music Evening</option>
+                <option>Comedy Show Live</option>
+                <option>College Annual Fest Show</option>
+            </select>
+
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="10" value="1" required>
+
+            <input type="submit" value="Confirm Booking">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Online Ticket System</p>
+    </footer>
+
+</body>
+</html>

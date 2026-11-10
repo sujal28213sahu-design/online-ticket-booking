@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Status - Online Ticket System</title>
+    <style>
+        body {
+            background-color: #fff9e6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #cc6600;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #ff9933;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #cc6600;
+        }
+        .content {
+            width: 60%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ffd11a;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .ticket-box {
+            background-color: #f2f9ff;
+            border: 2px dashed #3399ff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            text-align: left;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ff9933;
+            color: white;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ticket Status & Details</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="book.html">Book Ticket</a>
+        <a href="status.html">Check Status</a>
+    </nav>
+
+    <div class="content">
+        <h2>Your Booking Confirmation</h2>
+
+        <!-- Ticket Card showing Event Name, Date, and Timing -->
+        <div class="ticket-box">
+            <h3>🎟️ Latest Ticket Pass</h3>
+            <p><strong>Event Name:</strong> Mountain Sightseeing Pass</p>
+            <p><strong>Event Date:</strong> 15th November 2026</p>
+            <p><strong>Event Timing:</strong> 10:00 AM - 05:00 PM</p>
+            <p><strong>Status:</strong> <span style="color: green; font-weight: bold;">Confirmed</span></p>
+        </div>
+
+        <h3>All Records History</h3>
+        <table>
+            <tr>
+                <th>Booking ID</th>
+                <th>Event Name</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>#OTS101</td>
+                <td>Mountain Sightseeing Pass</td>
+                <td style="color: green; font-weight: bold;">Confirmed</td>
+            </tr>
+            <tr>
+                <td>#OTS102</td>
+                <td>City Temple VIP Darshan</td>
+                <td style="color: green; font-weight: bold;">Confirmed</td>
+            </tr>
+        </table>
+        <br>
+        <a href="book.html" style="color: #cc6600; text-decoration: underline; font-weight: bold;">← Book Another Ticket</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Online Ticket System</p>
+    </footer>
+
+</body>
+</html>
